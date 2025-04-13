@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Experience: Interactive Product Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="video-background">
+    <source src="Bg Samsung Galaxy Z- Flip.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <img src="SSlogo.png" alt="Logo" class="logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Samsung Galaxy Z Flip Section -->
+  <section class="about-section">
+    <div class="about-image"></div>
+    <div class="about-content"></div>
+  </section>
+
+  <!-- Additional Info Section -->
+  <section class="additional-info">
+    <div class="container">
+      <div class="text-container">
+        <h1>Galaxy Z Flip</h1>
+        <p>
+          Galaxy AI <img src="Star.png" alt="Star Icon" class="star-icon"> is here
+        </p>
+      </div>
+      <img src="Samsung_Galaxy_Z_Flip_5 about.png" alt="Samsung Galaxy Z Flip" class="additional-info-image">
+    </div>
+  </section>
+
+  <!-- Introduction Text -->
+  <section class="intro-text">
+    <div class="container">
+      <div class="intro-container">
+        <h1>
+          Galaxy AI <img src="Star.png" alt="Star Icon" class="star-icon"> is here
+        </h1>
+        <p>
+          Welcome to the era of mobile AI. With Galaxy Z Flip in your hands, you can unleash whole new levels of
+          creativity, productivity, and possibility — starting with the most important device in your life: your smartphone.
+        </p>
+        <h2>Epic, just like that</h2>
+      </div>
+    </div>
+  </section>
+
+
+<!-- 360-Degree Rotating 3D Product Section -->
+  <section class="product-360">
+    <div class="product-container">
+      <img id="flipProduct" src="Z Flip Product.png" alt="Samsung Galaxy Z Flip" />
+    </div>
+  </section>
+
+
+<!-- About Flex Window heading -->
+<section>
+    <div class="caption-flex-window">
+      <h1>
+        Flex Window.<br>
+        The largest Cover Screen <br>
+        on a Galaxy Z Flip yet
+      </h1>
+    </div>
+  </section>
+
+  <!-- Flex Window Section -->
+  <section class="flex-window">
+    <div class="flex-window-container">
+      <img id="flex-window" src="Flex Win.jpg" alt="Samsung Galaxy Z Flip" />
+      <h1>One size fits all pockets</h1>
+      <p>Our most compact Galaxy Z Flip yet folds down tight to slide <br>
+        as easily into your pocket as it does into your hands.
+      </p>
+    </div>
+  </section>
+
+  <!-- Color Inspired by Nature -->
+  <section class="galaxyflip-color">
+    <div class="galaxyflip-color-container">
+      <div class="galaxyflip-image">
+        <img id="galaxyflip-color" src="Samsung Galaxy ZFlip Color.png" alt="Samsung Galaxy Z Flip Color" />
+      </div>
+      <div class="galaxyflip-text">
+        <h1>Choose from seven colors inspired by nature</h1>
+        <div class="colors">
+          <div class="circle Peach" onclick="selectColor(this)"></div>
+          <div class="circle White" onclick="selectColor(this)"></div>
+          <div class="circle Crafted-black" onclick="selectColor(this)"></div>
+          <div class="circle Silvershadow" onclick="selectColor(this)"></div>
+          <div class="circle Mint" onclick="selectColor(this)"></div>
+          <div class="circle Yellow" onclick="selectColor(this)"></div>
+          <div class="circle Blue" onclick="selectColor(this)"></div>
+        </div>
+        <div id="selectedColor">Selected Color: None</div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Camera Caption -->
+ <section>
+    <div class="caption-camera">
+      <h1>
+        Camera.<br>
+        The best selfie<br>
+        experience on a Galaxy<br>
+        smartphone yet
+      </h1>
+    </div>
+  </section>
+  <!-- Camera Images Section -->
+  <section class="camera-images">
+    <div class="camera-images-container">
+      <div class="camera-image-wrapper">
+        <img class="camera-image" src="camera images (2).jpg" alt="Samsung Galaxy Z Flip camera images" />
+      </div>
+      <p>
+        Capture stunning selfies with FlexCam and make <br> any angle your best yet. No matter which camera <br>
+        you choose, Galaxy Z Flip5 makes it easy. Now all <br> you have left to do is master the art of the pose.
+      </p>
+    </div>
+  </section>
+
+
+<!-- Flex Camera Selfie Section -->
+<section class="flex-cam-selfie">
+    <div class="flex-cam-text">
+      <h1>FlexCam selfies. <br> Even when closed</h1>
+      <p>
+        Launch the camera app with the Flex Window shortcut <br> to capture
+        the moment. Snap photos, tweak the settings, <br> and retake, all
+        without ever opening your phone.
+      </p>
+      <p class="extra-text">
+        *Image simulated for illustrative purposes. Actual UI may be different.<br>
+        <span>*This photo has been retouched for color correction.</span>
+      </p>
+    </div>
+    <div class="flex-cam-selfie-container">
+      <div class="flex-cam-images">
+        <img src="flexcam images.png" alt="Samsung Galaxy Z Flip FlexCam">
+      </div>
+    </div>
+  </section>
+
+<!-- Night Selfie Section -->
+<section class="night-selfie">
+    <div class="night-text">
+      <h1>FlexCam selfies. <br> Even when closed</h1>
+      <p>
+        Galaxy Z Flip5's Wide camera brings even more of <br> the scene into frame. Unfolding is optional — just <br>
+        swipe the Camera icon on the Flex Window and <br> start recording with FlexCam. And keep the camera <br>
+        rolling,
+        because with 4K Nightography video, losing <br> sunlight doesn't mean losing out on quality.
+      </p>
+      <p class="extra-text">*Image simulated for illustrative purposes. Actual <br> UI may be different.</p>
+    </div>
+    <div class="night-selfie-container">
+      <div class="night-images">
+        <img src="night view pic.png" alt="Samsung Galaxy Z Flip Night View Images">
+      </div>
+    </div>
+  </section>
+
+
+<!-- Battery Life Section -->
+<section class="battery-section">
+    <div class="battery-text">
+      <div class="battery-life-content">
+        
+        <div class="battery-images-container">
+          <div class="battery-view-images">
+            <img src="Battery pic.png" alt="Samsung Galaxy Z Flip Battery">
+          </div>
+        </div>
+        
+        <div class="battery-life-text-head">
+          <h1>"The Z Flip is a game-changer 3,300 mAh"</h1>
+          <p>
+            Fold it, flip it, and fuel your day with unstoppable power.
+            Designed for those who never slow down, its battery keeps up with
+            your bold moves. More screen time, less downtime — the power is in your hands.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+      <div class="footer-column">
+        <h3>Product & Service</h3>
+        <p>Smartphones</p>
+        <p>Tablets</p>
+        <p>Audio and Sound Devices</p>
+        <p>Watches</p>
+        <p>Smart Switch</p>
+        <p>Mobile Accessories</p>
+        <p>TVs</p>
+        <p>Refrigerators</p>
+        <p>Cooking Appliances</p>
+        <p>Monitors</p>
+        <p>Memory Storage</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Shop</h3>
+        <p>Contact Us</p>
+        <p>Welcome Voucher</p>
+        <p>Defence Purchase Program</p>
+        <p>Corporate Employee Program</p>
+        <p>Samsung Experience Store</p>
+        <p>Store Locator</p>
+        <p>Smart Club</p>
+        <p>Terms of Use</p>
+        <p>Explore</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Support</h3>
+        <p>WhatsApp Us →</p>
+        <p>Sign Language →</p>
+        <p>Email Us →</p>
+        <p>Call Us</p>
+        <p>Email the CEO</p>
+        <p>Community →</p>
+        <p>Product Registration</p>
+        <p>Track Repair</p>
+        <p>Service Centre</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Account & Community</h3>
+        <p>My Page</p>
+        <p>My Products</p>
+        <p>Orders</p>
+        <p>Wishlist</p>
+        <p>Vouchers</p>
+        <p>My Referrals</p>
+        <p>Service</p>
+        <p>Community</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>Company Info</p>
+        <p>Careers</p>
+        <p>Contact</p>
+
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+        <p><i class="fa-regular fa-envelope"></i> abc@gmail.com</p>
+        <p><i class="fa-solid fa-map"></i> Powai (West), Mumbai-77</p>
+
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <p><i class="fa-brands fa-facebook"></i></p>
+          <p><i class="fa-brands fa-instagram"></i></p>
+          <p><i class="fa-brands fa-github"></i></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  
+
+  <!-- JavaScript Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

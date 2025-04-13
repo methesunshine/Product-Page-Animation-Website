@@ -1,0 +1,1199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Full Page Settings */
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #141010;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #FF4500;
+  }
+  
+  /* Background Video */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+  
+  /* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 50px;
+  background: transparent; /* Make sure it's transparent */
+  position: relative;
+  z-index: 1; /* Ensures it's above the background video */
+  color: #fff; /* Use white or light text to stand out on the video */
+}
+  
+  .about-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Additional Info Section */
+  .additional-info {
+    padding: 50px 30px;
+    background: #000;
+  }
+  
+  .additional-info .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .additional-info h1 {
+    font-size: 58px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .additional-info p {
+    font-size: 35px;
+    color: #fff;
+    line-height: 1.1;
+  }
+  
+  .text-container {
+    max-width: 50%;
+  }
+  
+  .additional-info-image {
+    width: 50%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Star Icon Styling */
+  .star-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+  
+  /* Intro Text Section */
+  .intro-text {
+    padding: 50px 30px;
+    background-color: #d9dad7;
+    color: #141010;
+  }
+  
+  .intro-text .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .intro-container h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-container p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .intro-container h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+
+
+
+
+  /* 360-Degree Product Section (If Needed Later) */
+  .product-360 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9dad7;
+    height: 70vh;
+  }
+  
+  .product-container img {
+    width: 565px;
+   height: 388px;
+   /* 1:1 Square */
+   cursor: grab;
+   transition: transform 0.3s ease-out;
+   transform-origin: center;
+  }
+
+
+
+
+  /* Flex Window Samsung Galaxy Z Flip Heading*/
+ .caption-flex-window {
+    display: flex;
+    justify-content: flex-start;
+    /* Align content to the left */
+    align-items: center;
+    /* Vertically center */
+    height: 39vh;
+    /* Full height of the viewport */
+    background-color: #fff;
+  }
+ 
+  .caption-flex-window h1 {
+    font-size: 58px;
+    /* Adjust size as needed */
+    font-weight: bold;
+    /* Bold letters */
+    text-align: left;
+    /* Align text to the left */
+    color: #000;
+    /* Text color (black) */
+    line-height: 1.2;
+    /* Line height for better readability */
+  }
+ 
+  /*Flx Window Images*/
+  .flex-window {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    background-color: #fff;
+  }
+ 
+  .flex-window-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertical alignment */
+    align-items: flex-end;
+    /* Align content to the right side */
+    text-align: right;
+    /* Text alignment */
+    gap: 20px;
+    /* Space between h1 and p */
+  }
+ 
+ 
+  .flex-window-container img {
+    width: 100%;
+    /* Image width */
+    max-width: 1000px;
+    /* Maximum size */
+    display: flex;
+    /* Removes extra space below image */
+  }
+ 
+  /*Flex Window Caption below images*/
+  .flex-window-container h1 {
+    font-size: 2rem;
+    padding-right: 195px;
+    font-weight: bold;
+    margin: 0;
+    /* Remove default margin */
+    line-height: 1.6;
+    /* Line height */
+    text-align: right;
+    width: 100%;
+    align-items: flex-end;
+    /* Align horizontally center */
+  }
+ 
+  .flex-window-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    /* Line height */
+    margin: 0px;
+    /* Remove default margin */
+    margin-bottom: 30px;
+    text-align: left;
+    align-items: flex-end;
+    /* Align horizontally center */
+  }
+ 
+
+
+
+
+
+ /*Samsung Galaxy Z flip Color*/
+ .galaxyflip-color {
+    display: flex;
+    height: 100vh;
+    background-color:#FFF5EE;
+    border: 5px;
+  }
+ 
+  .galaxyflip-color-container {
+    max-width: 2000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+ 
+  .galaxyflip-image {
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+  }
+ 
+  .galaxyflip-image img {
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+    /* Adjust this value for desired image size */
+    object-fit: cover;
+  }
+ 
+  .galaxyflip-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+ 
+  .galaxyflip-color-container h1 {
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+ 
+  .colors {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 100px;
+ 
+  }
+ 
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+ 
+  .circle:hover {
+    transform: scale(1.2);
+  }
+ 
+  .circle.selected {
+    outline: 3px solid #0078d7;
+    outline-offset: 3px;
+  }
+ 
+  .Peach {
+    background-color: #f5c6b3;
+  }
+ 
+  .White {
+    background-color: #ffffff;
+  }
+ 
+  .Crafted-black {
+    background-color: #1a1a1a;
+  }
+ 
+  .Silvershadow {
+    background-color: #c0c0c0;
+  }
+ 
+  .Mint {
+    background-color: #c5d8c6;
+  }
+ 
+  .Yellow {
+    background-color: #f7e65e;
+  }
+ 
+  .Blue {
+    background-color: #87ceeb;
+  }
+ 
+  #selectedColor {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+
+
+
+  /* Camera and Selfie In Samsung Galaxy Z flip */
+ .caption-camera {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: left;
+    /* Center vertically */
+    height: 70vh;
+    /* Full height of the viewport */
+    background-color: #fff;
+    text-align: left;
+    /* Ensure text inside is centered */
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+ 
+  .caption-camera h1 {
+    font-size: 70px;
+    /* Adjust size as needed */
+    font-weight: bold;
+    /* Bold letters */
+    color: #141010;
+    /* Text color (black) */
+    line-height: 1.2;
+    /* Line height for better readability */
+    padding-right: 270px;
+  }
+ 
+  /*camera images*/
+  .camera-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 140vh;
+    /* Full viewport height */
+    padding-left: 70px;
+    padding-right: 120px;
+  }
+ 
+  .camera-images-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack image and text vertically */
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    max-width: 1000px;
+  }
+ 
+  .camera-image-wrapper {
+    width: 50vw;
+    max-width: 700px;
+    /* Ensures image doesn’t get too large */
+    border-radius: 30px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Clips image to keep rounded corners */
+  }
+ 
+  .camera-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+ 
+  .camera-images-container p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+    text-align: left;
+    /* Aligns text to the left */
+    margin-top: 10px;
+    /* Adds space between image and text */
+    margin-right: -300px;
+    /* Moves the paragraph slightly to the left */
+    margin-bottom: 20px;
+    max-width: 500px;
+    /* Limits paragraph width for better readability */
+  }
+
+/*About flex camera selfie */
+.flex-cam-selfie {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    /* Moves content to the right side*/
+    justify-content: space-between;
+    /* Creates space between text and image */
+    align-items: center;
+    /* Centers content vertically */
+    height: 100vh;
+    /* Full viewport height */
+    padding-left: 60px;
+    /* Adds space from the left edge */
+  }
+ 
+  .flex-cam-selfie-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Ensures image stays left */
+    align-items: right;
+    /* Centers the image vertically */
+  }
+ 
+  .flex-cam-images img {
+    width: 160%;
+    /* Makes the image responsive */
+    max-width: 1500px;
+    /* Controls max size */
+    height: 70vh;
+    /* Maintains aspect ratio */
+    border-radius: 20px;
+    /* Adds rounded corners */
+  }
+ 
+  /*Flex Camera Selfie*/
+  .flex-cam-selfie {
+    display: flex;
+    justify-content: flex-start;
+    /* Moves content to the left */
+    align-items: center;
+    /* Centers content vertically */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #fff;
+    /* White background */
+    padding: 300px;
+    column-gap: 30px;
+  }
+ 
+  .flex-cam-text {
+    width: 100%;
+    /* Adjust width for text */
+    text-align: left;
+    /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Ensures everything is aligned left */
+    justify-content: center;
+    /* Centers text vertically */
+    margin-top: 50px;
+    /* Moves the text up */
+ 
+  }
+ 
+  .flex-cam-text h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+ 
+  .flex-cam-text p {
+    font-size: 14px;
+    color: #333;
+  }
+ 
+  .extra-text {
+    font-size: 10px;
+    color: #555;
+    margin-top: 60px;
+    /* Space between paragraphs */
+    line-height: 1.4;
+  }
+
+
+
+
+
+/*night view  pic by samsung galaxy z flip
+/*Flex Camera Selfie*/
+.night-selfie {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    /* Moves content to the right side*/
+    justify-content: space-between;
+    /* Creates space between text and image */
+    align-items: center;
+    /* Centers content vertically */
+    height: 100vh;
+    /* Full viewport height */
+    padding-left: 60px;
+    /* Adds space from the left edge */
+  }
+ 
+  .night-selfie-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Ensures image stays left */
+    align-items: right;
+    /* Centers the image vertically */
+  }
+ 
+  .night-images img {
+    width: 170%;
+    /* Makes the image responsive */
+    max-width: 1500px;
+    /* Controls max size */
+    height: 75vh;
+    /* Maintains aspect ratio */
+    border-radius: 20px;
+    /* Adds rounded corners */
+  }
+ 
+  .night-selfie {
+    display: flex;
+    justify-content: flex-start;
+    /* Moves content to the left */
+    align-items: center;
+    /* Centers content vertically */
+    height: 70vh;
+    /* Full viewport height */
+    background-color: #fff;
+    /* White background */
+    padding: 300px;
+    column-gap: 20px;
+  }
+ 
+  .night-text {
+    width: 100%;
+    /* Adjust width for text */
+    text-align: left;
+    /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Ensures everything is aligned left */
+    justify-content: center;
+    /* Centers text vertically */
+    margin-top: 50px;
+    /* Moves the text up */
+  }
+ 
+  .night-text h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+ 
+  .night-text p {
+    font-size: 15px;
+    color: #333;
+  }
+ 
+  .extra-text {
+    font-size: 10px;
+    color: #555;
+    margin-top: 60px;
+    /* Space between paragraphs */
+    line-height: 1.4;
+  }
+
+
+/* Battery life section styling */
+.battery-text {
+    background-color: #7393B3;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    min-height: 200px;
+  }
+  
+  .battery-life-content {
+    display: flex;
+    align-items: center;           /* Vertically center image and text */
+    justify-content: space-between;
+    flex-wrap: wrap;               /* Responsive on smaller screens */
+  }
+  
+  .battery-images-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;   /* Image on the left */
+    align-items: center;
+    padding-left: 40px;
+  }
+  
+  .battery-view-images img {
+    max-width: 600px;
+    width: 100%;                  /* Makes image responsive */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .battery-life-text-head {
+    flex: 1;
+    padding-left: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;      /* Center the text vertically */
+    max-width: 600px;             /* Optional: Controls text width */
+  }
+  
+  .battery-life-text-head h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #000;
+    
+  }
+  
+  .battery-life-text-head p {
+    font-size: 30px;
+    line-height: 1.6;
+    
+  }
+  
+
+  /*footer*/
+.footer {
+    background-color: #F08000;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    width: 20%;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.footer-column p:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons p {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.social-icons p:hover {
+    color: #000;
+}
+
+
+
+
+
+
+
+/* Base Styles */
+body {
+  position: relative;
+  z-index: 0;
+}
+
+/* Background overlay for better text readability */
+body::before {
+  content: '';
+  position: fixed; /* Ensures full page coverage */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1; /* Places overlay behind content */
+}
+
+/* Media Queries */
+
+/* Small Devices (max-width: 567px) */
+@media (max-width: 567px) {
+  .video-background {
+    display: none;
+  }
+
+  body {
+    background: url('Pbg.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .additional-info .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .additional-info h1 {
+    font-size: 30px;
+  }
+
+  .additional-info-image {
+    width: 100%;
+    height: auto;
+    margin: 1px 0;
+  }
+
+  .intro-container h1 {
+    font-size: 28px;
+  }
+
+  .intro-container p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .intro-container h2 {
+    font-size: 15px;
+  }
+
+  .star-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-360 {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .product-container img {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+
+  .caption-flex-window {
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .caption-flex-window h1 {
+    font-size: 29px;
+    line-height: 1.3;
+  }
+
+  .caption-flex-window h1 .line {
+    display: block;
+  }
+
+  .flex-window {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .flex-window-container {
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .flex-window-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .flex-window-container h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .flex-window-container p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .galaxyflip-color {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .galaxyflip-color-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .galaxyflip-image {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .galaxyflip-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .galaxyflip-text {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .galaxyflip-color-container h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .colors {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  #selectedColor {
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .caption-camera {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .caption-camera h1 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .caption-camera h1 span {
+    display: block;
+  }
+
+  .camera-images,
+  .flex-cam-selfie,
+  .night-selfie {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .flex-cam-text,
+  .night-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .flex-cam-text h1,
+  .night-text h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+
+  .flex-cam-text p,
+  .night-text p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .extra-text {
+    font-size: 10px;
+    color: #555;
+    margin-top: 30px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .flex-cam-selfie-container,
+  .night-selfie-container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .flex-cam-images img,
+  .night-images img {
+    width: 90vw;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+  }
+
+  .battery-text {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .battery-life-text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .battery-life-text h1 {
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+
+  .battery-life-text p {
+    font-size: 8px;
+    line-height: 1.0;
+  }
+
+  .battery-view-images img {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .battery-images {
+    margin-top: 30px;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  .footer-column p {
+    font-size: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-icons p {
+    font-size: 18px;
+  }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .intro-container h1 {
+    font-size: 22px;
+  }
+  body{
+    background-image: url(Pbg.jpg);
+  }
+  .intro-container p {
+    font-size: 12px;
+  }
+
+  .caption-flex-window h1 {
+    font-size: 28px;
+  }
+
+  .galaxyflip-color-container h1 {
+    font-size: 24px;
+  }
+
+  .flex-cam-text h1,
+  .night-text h1 {
+    font-size: 18px;
+  }
+
+  .flex-cam-text p,
+  .night-text p {
+    font-size: 12px;
+  }
+
+  .circle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .flex-cam-images img,
+  .night-images img {
+    width: 95vw;
+  }
+
+  .battery-life-text h1 {
+    font-size: 9px;
+  }
+
+  .battery-life-text p {
+    font-size: 7px;
+  }
+
+  .footer-column h3 {
+    font-size: 14px;
+  }
+
+  .footer-column p {
+    font-size: 12px;
+  }
+
+  .social-icons p {
+    font-size: 16px;
+  }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .intro-container h1 {
+    font-size: 2.5rem;
+  }
+  body{
+    background-image: url("Pbg.jpeg");
+  }
+  .intro-container p {
+    font-size: 12px;
+  }
+
+  .caption-flex-window h1 {
+    font-size: 28px;
+  }
+
+  .galaxyflip-color-container h1 {
+    font-size: 24px;
+  }
+
+  .flex-cam-text h1,
+  .night-text h1 {
+    font-size: 18px;
+  }
+
+  .flex-cam-text p,
+  .night-text p {
+    font-size: 12px;
+  }
+
+  .circle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .flex-cam-images img,
+  .night-images img {
+    width: 95vw;
+  }
+
+  .battery-life-text h1 {
+    font-size: 9px;
+  }
+
+  .battery-life-text p {
+    font-size: 7px;
+  }
+
+  .footer-column h3 {
+    font-size: 14px;
+  }
+
+  .footer-column p {
+    font-size: 12px;
+  }
+
+  .social-icons p {
+    font-size: 16px;
+  }
+}
